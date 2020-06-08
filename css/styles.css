@@ -131,9 +131,6 @@ body {
   line-height: 1.16;
   text-align: center;
 }
-.section-link {
-  text-decoration: none;
-}
 
 /* feature */
 
@@ -153,11 +150,11 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .work-list .title {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 27px 85px 27px 86px;
   width: 370px;
   height: 70px;
 
@@ -168,9 +165,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-.work-list .link {
-  text-decoration: none;
+.title.one {
+  padding: 27px 83px 27px 83px;
 }
+.title.two {
+  padding: 27px 85px 27px 86px;
+}
+.title.three {
+  padding: 27px 90px 27px 91px;
+}
+
 /* Exampls */
 
 /* Team */
@@ -180,9 +184,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-}
-.profile {
-  text-decoration: none;
 }
 .position {
   margin-top: 0px;
@@ -206,21 +207,34 @@ body {
 }
 .address .address-list {
   color: var(--primary-white-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
+  text-decoration: none;
+}
+.address-link {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .address-contact {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
+  text-decoration: none;
 }
 .subscription {
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.list .item {
+  text-decoration: none;
 }
 .developed {
   margin-top: 0px;
@@ -235,7 +249,9 @@ body {
 }
 
 /* Portfolio */
-
+.portfolio {
+  text-decoration: none;
+}
 .works {
   padding-top: 93px;
   padding-bottom: 94px;
