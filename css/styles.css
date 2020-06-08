@@ -237,6 +237,8 @@ body {
 /* Portfolio */
 
 .works {
+  padding-top: 93px;
+  padding-bottom: 94px;
 }
 .works-title {
   margin-top: 0px;
@@ -244,12 +246,19 @@ body {
 }
 
 .work-roster .title {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   color: var(--title-text-color);
+
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
+
 .work-roster .text {
   margin-top: 0px;
   margin-bottom: 0px;
