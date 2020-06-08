@@ -50,9 +50,14 @@ body {
   margin-bottom: 0px;
 }
 .contacts {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+.contacts .item + .item {
+  margin-left: 30px;
 }
 .contacts .link {
   color: var(--primary-text-color);
@@ -66,13 +71,22 @@ body {
 /* site-nav */
 
 .site-nav {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
 }
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
+
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -152,11 +166,12 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
-
+.work-list {
+  width: 370px;
+}
 .work-list .title {
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 370px;
 
   background: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
@@ -168,13 +183,13 @@ body {
   text-transform: uppercase;
 }
 .title.one {
-  padding: 27px 83px 27px 83px;
+  padding: 27px 0px 27px 0px;
 }
 .title.two {
-  padding: 27px 85px 27px 86px;
+  padding: 27px 0px 27px 0px;
 }
 .title.three {
-  padding: 27px 90px 27px 91px;
+  padding: 27px 0px 27px 0px;
 }
 /* Exampls */
 
