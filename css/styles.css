@@ -20,6 +20,21 @@
   margin: 0;
   list-style: none;
 }
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-list {
+  display: block;
+  width: 370px;
+  height: auto;
+}
+.img-team {
+  display: block;
+  width: 270px;
+  height: auto;
+}
 
 body {
   color: var(--primary-text-color);
@@ -29,7 +44,7 @@ body {
 }
 
 .page-header {
-  background-color: palevioletred;
+  border-bottom: 1px solid #ececec;
 }
 /* main-nav */
 .main-nav {
@@ -133,7 +148,6 @@ body {
 
 .hero {
   text-align: center;
-  background-color: purple;
 }
 .hero-title {
   margin-top: 0px;
@@ -149,8 +163,8 @@ body {
 /* section */
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
-  background-color: royalblue;
 }
 .section.one {
   padding-top: 94px;
@@ -198,6 +212,7 @@ body {
 .feature-list .element + .element {
   margin-left: 30px;
 }
+
 .work-list,
 .team-list {
   display: flex;
@@ -247,7 +262,16 @@ body {
 }
 
 /* Team */
-
+.team {
+  background: #f5f4fa;
+}
+.profile {
+  padding: 30px 32px 24px 32px;
+  background: #ffffff;
+}
+.main-network .network + .network {
+  margin-left: 10px;
+}
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -262,9 +286,6 @@ body {
 }
 .list .network + .network {
   margin-left: 10px;
-}
-.main-network {
-  padding: 0px 32px 24px 32px;
 }
 
 /* Footer */
@@ -283,6 +304,8 @@ body {
   display: flex;
 }
 .footer-logo {
+  margin-bottom: 10px;
+  margin-right: 171px;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 22px;
@@ -314,6 +337,10 @@ body {
   text-decoration: none;
 }
 
+.subscription-hover,
+.footer-contacts {
+  margin-bottom: 21px;
+}
 .subscription {
   color: var(--primary-white-color);
   font-weight: 700;
@@ -343,6 +370,7 @@ body {
 /* Portfolio */
 
 .portfolio {
+  display: block;
   text-decoration: none;
 }
 .works {
@@ -359,8 +387,16 @@ body {
 .work-roster .item {
   width: 370px;
 }
-/* 
-  border: 1px solid #eeeeee; */
+
+.card {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  background: #ffffff;
+}
+
 .work-roster .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -368,7 +404,6 @@ body {
   margin-bottom: 30px;
 }
 .work-roster .title {
-  padding-top: 20px;
   padding-bottom: 4px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -390,11 +425,16 @@ body {
   font-size: 16px;
   line-height: 1.8;
 }
-
+/* information temporarily hidden */
+.information {
+  display: none;
+}
 /* Button */
 
 .button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 34px;
   border: 1px solid transparent;
 
   color: var(--title-text-color);
@@ -406,6 +446,9 @@ body {
   line-height: 1.6;
   text-decoration: none;
   text-align: center;
+}
+.button .button-element + .button-element {
+  margin-left: 8px;
 }
 .button.primary {
   padding: 6px 22px;
@@ -421,6 +464,7 @@ body {
   background-color: var(--accent-color);
 }
 .button.secondary {
+  display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
