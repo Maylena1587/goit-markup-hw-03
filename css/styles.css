@@ -45,6 +45,9 @@
   width: 270px;
   height: auto;
 }
+.element {
+  width: 370px;
+}
 
 body {
   color: var(--primary-text-color);
@@ -230,7 +233,6 @@ body {
 .work-list,
 .team-list {
   display: flex;
-  width: 370px;
 }
 .work-list .element,
 .team-list .element + .element {
